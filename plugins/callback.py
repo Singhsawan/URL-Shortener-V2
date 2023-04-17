@@ -13,8 +13,8 @@ from pyrogram import Client, filters
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 from translation import (
-    ABOUT_REPLY_MARKUP,
-    ABOUT_TEXT,
+    ABT_REPLY_MARKUP,
+    ABT_TEXT,
     ADMINS_MESSAGE,
     BACK_REPLY_MARKUP,
     BATCH_MESSAGE,
@@ -158,7 +158,7 @@ async def on_callback_query(bot: Client, query: CallbackQuery):
                 firstname=temp.FIRST_NAME,
                 username=temp.BOT_USERNAME,
                 repo=SOURCE_CODE,
-                owner="@ask_admin001",
+                owner="@J_shree_ram",
             ),
             reply_markup=HELP_REPLY_MARKUP,
             disable_web_page_preview=True,
@@ -167,8 +167,8 @@ async def on_callback_query(bot: Client, query: CallbackQuery):
     elif query.data == "about_command":
         bot = await bot.get_me()
         await query.message.edit(
-            ABOUT_TEXT.format(bot.mention(style="md")),
-            reply_markup=ABOUT_REPLY_MARKUP,
+            ABT_TEXT.format(bot.mention(style="md")),
+            reply_markup=ABT_REPLY_MARKUP,
             disable_web_page_preview=True,
         )
 
