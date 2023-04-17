@@ -164,7 +164,7 @@ async def on_callback_query(bot: Client, query: CallbackQuery):
             disable_web_page_preview=True,
         )
 
-    elif query.data == "about_command":
+    elif query.data == "abt_command":
         bot = await bot.get_me()
         await query.message.edit(
             ABT_TEXT.format(bot.mention(style="md")),
