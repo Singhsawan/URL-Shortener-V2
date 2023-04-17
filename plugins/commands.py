@@ -108,7 +108,7 @@ async def about_command(c, m: Message):
             reply_markup=reply_markup,
         )
     await m.reply_text(
-        ABOUT_TEXT.format(bot.mention(style="md")),
+        ABT_TEXT.format(bot.mention(style="md")),
         reply_markup=reply_markup,
         disable_web_page_preview=True,
     )
