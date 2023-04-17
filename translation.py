@@ -41,7 +41,7 @@ Useful commands:
 - /batch -100xxx: To shorten or convert all posts in your channel
 """
 
-ABOUT_TEXT = """
+ABT_TEXT = """
 **My Details:**
 
 `🤖 Name:` ** {} **
@@ -116,7 +116,7 @@ START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton("Help", callback_data="help_command"),
-            InlineKeyboardButton("About", callback_data="about_command"),
+            InlineKeyboardButton("About", callback_data="abt_command"),
         ],
         [
             InlineKeyboardButton("Method", callback_data="method_command"),
