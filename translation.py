@@ -148,7 +148,7 @@ BACK_REPLY_MARKUP = InlineKeyboardMarkup(
 )
 
 USER_ABOUT_MESSAGE = """
-🔧 Here are the current settings for this bot:
+ Here are the current settings for this bot:
 
 - 🌐 Shortener website: {base_site}
 
